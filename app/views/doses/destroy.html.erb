@@ -1,0 +1,7 @@
+<h1>Delete Ingredient</h1>
+
+<% @tasks.each do |task| %>
+  <h2><%= link_to task.title, task_path(task.id)%></h2>
+  <%= check_box_tag :completed, 0, task.completed, class: 'form-control'%>
+  <p><%= link_to "Delete", task_path(task.id), method: :delete, data: {confirm: 'Are you sure?'} %></p>
+  <% end %>
