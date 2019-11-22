@@ -1,5 +1,11 @@
-<h1>Cocktails List</h1>
-<%= link_to "Create New Cocktail", new_cocktail_path %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>Crazy Cocktails</h1>
+    <p>Change your life, learn to drink</p>
+    <%= link_to "Create New Cocktail", new_cocktail_path , "btn btn-ghost" %>
+  </div>
+</div>
+
 
 <div class="cards">
 <% @cocktail.each do |cocktail| %>
